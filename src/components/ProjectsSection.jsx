@@ -5,26 +5,26 @@ import { ArrowRight } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "Danse 1",
-    description: "A dance project",
+    title: "Chorégraphie moderne",
+    description: "Un projet de danse contemporaine explorant les mouvements fluides",
     image: "/projects/project1.png",
-    tags: ["dance", "art", "performance"],
+    tags: ["danse", "art", "performance"],
     demoUrl: "#",
   },
   {
     id: 2,
-    title: "Danse 2",
-    description: "Another dance project",
+    title: "Spectacle de ballet",
+    description: "Une représentation classique mettant en valeur la technique et l'émotion",
     image: "/projects/project2.png",
-    tags: ["dance", "art", "performance"],
+    tags: ["danse", "art", "performance"],
     demoUrl: "#",
   },
   {
     id: 3,
-    title: "Danse 3",
-    description: "Yet another dance project",
+    title: "Atelier de danse",
+    description: "Un projet éducatif pour enseigner les bases de la danse aux débutants",
     image: "/projects/project3.png",
-    tags: ["dance", "art", "performance"],
+    tags: ["danse", "art", "performance"],
     demoUrl: "#",
   },
 ];
@@ -35,11 +35,11 @@ export const ProjectsSection = () => {
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center">
           {" "}
-          Featured <span className="text-primary"> Projects</span>
+          Projets <span className="text-primary"> en vedette</span>
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          A showcase of my recent projects, highlighting my skills and creativity.
+          Une vitrine de mes projets récents, mettant en valeur mes compétences et ma créativité.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -92,7 +92,7 @@ export const ProjectsSection = () => {
             target="_blank"
             href="https://github.com/GeloSwift"
           >
-            Check My Github <ArrowRight size={16} />
+            Voir mon Github <ArrowRight size={16} />
           </a>
         </div>
       </div>

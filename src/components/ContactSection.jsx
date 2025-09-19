@@ -14,8 +14,8 @@ export const ContactSection = () => {
 
     setTimeout(() => {
       toast({
-        title: "Message sent!",
-        description: "Thank you for your message. I'll get back to you soon.",
+        title: "Message envoyé !",
+        description: "Merci pour votre message. Je vous répondrai bientôt.",
       });
       setIsSubmitting(false);
     }, 800);
@@ -24,17 +24,17 @@ export const ContactSection = () => {
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Get In <span className="text-primary"> Touch</span>
+          Entrer en <span className="text-primary"> contact</span>
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          I'm always open to discussing new projects, creative ideas, or opportunities to
-          collaborate. Feel free to reach out!
+          Je suis toujours ouverte à discuter de nouveaux projets, d'idées créatives ou
+          d'opportunités de collaboration. N'hésitez pas à me contacter !
         </p>
 
         <div className="grid grid-cols1 md:grid-cols-2 gap-12">
           <div className="space-y-8">
-            <h3 className="text-2xl font-semibold mb-6"> Contact Information</h3>
+            <h3 className="text-2xl font-semibold mb-6"> Informations de contact</h3>
 
             <div className="space-y-6 justify-center">
               <div className="flex items-start space-x-4">
@@ -43,7 +43,7 @@ export const ContactSection = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-medium"> Phone</h4>
+                  <h4 className="font-medium"> Email</h4>
                   <a
                     href="mailto:hello@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -59,7 +59,7 @@ export const ContactSection = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-medium"> Phone</h4>
+                  <h4 className="font-medium"> Téléphone</h4>
                   <a
                     href="tel:+33612345678"
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -75,7 +75,7 @@ export const ContactSection = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-medium"> Location</h4>
+                  <h4 className="font-medium"> Localisation</h4>
                   <a className="text-muted-foreground hover:text-primary transition-colors">
                     Mondonville, Aussonne, Cornebarrieu, Daux
                   </a>
@@ -84,7 +84,7 @@ export const ContactSection = () => {
             </div>
 
             <div className="pt-8">
-              <h4 className="font-medium mb-4"> Connect With Me</h4>
+              <h4 className="font-medium mb-4"> Me suivre</h4>
               <div className="flex space-x-4 justify-center">
                 <a href="#" target="_blank">
                   <Instagram />
@@ -103,13 +103,13 @@ export const ContactSection = () => {
           </div>
 
           <div className="bg-card p-8 rounded-lg shadow-xs" onSubmit={handleSubmit}>
-            <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
+            <h3 className="text-2xl font-semibold mb-6"> Envoyer un message</h3>
 
             <form className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
                   {" "}
-                  Your Name
+                  Votre nom
                 </label>
                 <input
                   type="text"
@@ -124,7 +124,7 @@ export const ContactSection = () => {
               <div>
                 <label htmlFor="email" className="block text-sm font-medium mb-2">
                   {" "}
-                  Your Email
+                  Votre email
                 </label>
                 <input
                   type="email"
@@ -139,7 +139,7 @@ export const ContactSection = () => {
               <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-2">
                   {" "}
-                  Your Message
+                  Votre message
                 </label>
                 <textarea
                   id="message"
@@ -155,7 +155,7 @@ export const ContactSection = () => {
                 disabled={isSubmitting}
                 className={cn("cosmic-button w-full flex items-center justify-center gap-2")}
               >
-                {isSubmitting ? "Sending..." : "Send Message"}
+                {isSubmitting ? "Envoi en cours..." : "Envoyer le message"}
                 <Send size={16} />
               </button>
             </form>

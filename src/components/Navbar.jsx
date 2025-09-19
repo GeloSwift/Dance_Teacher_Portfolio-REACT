@@ -4,10 +4,10 @@ import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
-  { names: "Home", href: "#hero" },
-  { names: "About", href: "#about" },
-  { names: "Skills", href: "#skills" },
-  { names: "Projects", href: "#projects" },
+  { names: "Accueil", href: "#hero" },
+  { names: "À propos", href: "#about" },
+  { names: "Compétences", href: "#skills" },
+  { names: "Projets", href: "#projects" },
   { names: "Contact", href: "#contact" },
 ];
 
@@ -57,7 +57,7 @@ export const Navbar = () => {
         <button
           onClick={() => setIsMenuOpen((prev) => !prev)}
           className="md:hidden p-2 text-foreground z-50"
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
         >
           {" "}
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}{" "}
